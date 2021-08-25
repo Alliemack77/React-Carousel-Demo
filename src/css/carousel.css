@@ -1,0 +1,51 @@
+.carousel {
+    overflow: hidden; /* show only the active item*/
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 250ms ease-in;
+}
+
+.carousel-item {
+    border: solid 2px purple;
+    display: inline-flex; /* stacks all flex items one on top of the other, only one shows at a time*/
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 600px;
+    height: 250px;
+    background-color: #333333;
+    color: #fff;
+}
+
+.carousel-item > div {
+    border: solid 2px red;
+    margin: 25rem;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    /* /background: chartreuse; */
+}
+
+.indicators > button {
+    margin: 5px;
+}
+
+.dots {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgb(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: pointer;
+}
+
+.dots.active {
+    background: #333;
+}
